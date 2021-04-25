@@ -19,14 +19,14 @@
 * `sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison`
 
 ## ¿Cómo descargar una versión de kernel desde terminal?
-* `wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.6.tar.xz`
+* `wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.16.tar.xz`
 
 ## ¿Cómo extraer el código comprimido del kernel desde terminal?
-* `tar xvf linux-5.9.6.tar.xz`
+* `tar xvf linux-5.11.16.tar.xz`
 
 ## ¿Cómo configurar el kernel?
 ###### La configuración del kernel puede ajustarse de la siguiente manera:
-* `cd linux-5.9.6`
+* `cd linux-5.11.16`
 * `cp -v /boot/config-$(uname -r) .config`
 * `make menuconfig`
 ###### Esto abrirá la ventana de configuración del kernel. En este menú hay opciones de firmware, virtualización, red, sistema de archivos, configuración de memoria, etc.
@@ -38,7 +38,7 @@
 * `sudo make modules_install`
 
 ## ¿Cómo instalar el kernel?
-* `sudo make install `
+* `sudo make install`
 
 ## ¿Cómo indicarle a la computadora con cuál kernel debe iniciar?
 * Para llevar a cabo este paso, es necesario que la USB esté desmontada.
