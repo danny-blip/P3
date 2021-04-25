@@ -1,5 +1,5 @@
-# Manejo de discos
-## ¿Cuáles son las diferencias entre hda, sda y vda? ¿Qué significa la letra y el número al final de los identificadores?
+# Compilación del kernel de Linux
+## ¿Cómo hacer un respaldo de una máquina virtual y cómo levantar ese respaldo?
 ###### Los nombres de los discos y particiones de los diferentes sistemas operativos se les otorgan diferentes nombres, por ejemplo:
 ###### Para MS-DOS y Windows, los dispositivos suelen llamarse por letras (A, B, C, D...):
 * Unidad A: primera unidad de disquetes
@@ -35,7 +35,7 @@
 * `/dev/vdp` -> Decimosexta partición en la primera unidad de disco Xen VBD del sistema.
 ###### La enumeración, es decir, las particiones de `vda`, se manejan de la misma manera que los discos IDE, las particiones pueden llegar hasta 15 bits.
 ###### La diferencia entre `hda`, `sda` y `vda` es que hda es la partición de disco maestro IDE, mientras que sda son las particiones de disco externo detectado emulado sin que el s.o. invitado sepa que se está ejecutando, mientras que el `vda` el s.o. invitado está consciente de que se ejecuta y de que es un disco virtual en la nube que emula lo que hace un `sda`, pero sin la necesidad de hardware.
-## ¿Cómo montar y desmontar una USB en el sistema por terminal?
+## ¿Cómo funciona la nomenclatura del kernel?
 ###### Primero, se debe saber qué dispositivos están montados, para eso, se utiliza el siguiente comando:
 * `df -h`
 ###### Para desmontar una USB en terminal se utiliza el siguiente comando:
@@ -50,7 +50,7 @@
 
 ![alt text](https://github.com/danny-blip/NobleTeam/blob/main/2b.png "2b")
 
-## ¿Cómo enlistar la información de los dispositivos de bloque conectados aunque no estén montados en terminal?
+## ¿Cómo enlistar los paquetes requeridos para la compilación y cómo instalarlos desde terminal?
 *	Ejecutar el comando `lsblk` (este comando proviene de la abreviatura «List Block Devices»).
 
 ![alt text](https://github.com/danny-blip/NobleTeam/blob/main/3a.png "3a")
@@ -91,7 +91,7 @@
 
 ![alt text](https://github.com/danny-blip/NobleTeam/blob/main/3f.png "3f")
 
-## ¿Cómo mostrar la tabla de particiones del disco donde está instalado el sistema operativo en terminal?
+## ¿Cómo descargar una versión de kernel desde terminal?
 * Primero, se deben tener privilegios de súper usuario:
 1. `sudo su`
 2. Ingresar la contraseña, la cual es la que se utiliza para acceder al equipo.
@@ -106,7 +106,7 @@
 * Lo primero que se muestra en la imagen es el disco en donde está instalado el sistema operativo, si se observa en la parte de abajo, hay una tabla, esa es la tabla de particiones del sistema operativo.
 * En caso de que no hubiese tabla, quiere decir que no hay particiones en ese disco.
 * Para poder salir, solo se coloca el comando exit para salir del modo super usuario.
-## ¿Cómo conectar una memoria USB y mostrar su tabla de particiones en terminal?
+## ¿Cómo extraer el código comprimido del kernel desde terminal?
 ###### Para mostrar las tablas de particiones, se utiliza el siguiente comando:
 * `sudo fdisk -l`
 
@@ -114,7 +114,7 @@
 
 ![alt text](https://github.com/danny-blip/NobleTeam/blob/main/5b.png "5b")
 
-## ¿Cómo borrar todas las particiones de la USB en terminal?
+## ¿Cómo configurar el kernel?
 * Para llevar a cabo este paso, es necesario que la USB esté desmontada.
 * Ejecutar `sudo fdisk /dev/sdb`.
 * Ejecutar `d` (delete) para borrar una partición.
@@ -126,7 +126,7 @@
 
 ![alt text](https://github.com/danny-blip/NobleTeam/blob/main/6a.png "6a")
 
-## ¿Cómo crear tres particiones físicas y una extendida en la USB?
+## ¿Cómo compilar el código del kernel?
 * Para llevar a cabo este paso, es necesario que la USB esté desmontada.
 * Ejecutar `sudo fdisk /dev/sdb`.
 * Ejecutar `n` (new) para crear una nueva partición.
@@ -143,7 +143,7 @@
 
 ![alt text](https://github.com/danny-blip/NobleTeam/blob/main/7b.png "7b")
 
-## ¿Cómo crear una partición lógica dentro de la partición extendida de la USB en terminal?
+## ¿Cómo instalar módulos?
 * Para llevar a cabo este paso, es necesario que la USB esté desmontada.
 * Se necesitan 3 particiones físicas y una partición extendida.
 * Ejecutar `sudo fdisk /dev/sdb`.
@@ -154,7 +154,7 @@
 
 ![alt text](https://github.com/danny-blip/NobleTeam/blob/main/8a.png "8a")
 
-## En la interfaz gráfica de la aplicación «Discos», ¿cómo borrar las particiones para que solo exista una partición que abarque toda la USB?
+## ¿Cómo instalar el kernel?
 * Para llevar a cabo este paso, es necesario que la USB esté desmontada.
 * Abrir la aplicación Discos en Ubuntu.
 
@@ -182,7 +182,7 @@
 
 ![alt text](https://github.com/danny-blip/NobleTeam/blob/main/9g.png "9g")
 
-## ¿Cómo copiar un archivo .iso de distribución live de linux a la USB por medio del comando «dd» en terminal?
+## ¿Cómo indicarle a la computadora con cuál kernel debe iniciar?
 * Para llevar a cabo este paso, es necesario que la USB esté desmontada.
 * Descargar un archivo iso de la distribución Linux deseada. Para este caso, se utilizará Kali Linux. Una vez que el archivo esté descargado, se abre la terminal, se cambia al directorio en donde se guardó el archivo `.iso` y se ejecuta el siguiente comando:
 
@@ -191,3 +191,5 @@
 * Se tardará unos minutos dependiendo de la capacidad de la USB. Finalmente, se debe montar la USB y, en ella, se tendrá lo siguiente:
 
 ![alt text](https://github.com/danny-blip/NobleTeam/blob/main/10B.png "10b")
+
+## ¿Cómo verificar el cambio del kernel a partir de consola?
