@@ -32,6 +32,8 @@
 * Número de subversión del kernel.
 * Número de parche.
 
+###### En este ejemplo, la versión es 5, la subversión es 11 y el número de parche es 16.
+
 ![alt text](https://github.com/danny-blip/P3/blob/main/k1.png "k1")
 
 ## ¿Cómo instalar los paquetes requeridos para la compilación del kernel desde terminal?
