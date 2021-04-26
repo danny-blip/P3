@@ -8,7 +8,7 @@
 
 ![alt text](https://github.com/danny-blip/P3/blob/main/a1.png "a1")
 
-* Dar clic derecho sobre ella y se selecciona la opción «clonar».
+* Dar clic derecho sobre ella y seleccionar la opción «clonar».
 
 ![alt text](https://github.com/danny-blip/P3/blob/main/a2.png "a2")
 
@@ -32,10 +32,12 @@
 * Número de subversión del kernel.
 * Número de parche.
 
-## ¿Cómo enlistar los paquetes requeridos para la compilación del kernel y cómo instalarlos desde terminal?
+## ¿Cómo instalar los paquetes requeridos para la compilación del kernel desde terminal?
+
 * `sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison`
 
 ## ¿Cómo descargar una versión de kernel desde terminal?
+
 * `wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.16.tar.xz`
 
 ## ¿Cómo extraer el código comprimido del kernel desde terminal?
