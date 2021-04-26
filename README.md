@@ -76,11 +76,15 @@
 
 ## ¿Cómo compilar el código del kernel?
 
+###### Este comando compila el kernel (es un buen momento para ir por un café, ya que esto tomará un buen rato):
+
 * `sudo make`
 
 ![alt text](https://github.com/danny-blip/P3/blob/main/g1.png "g1")
 
 ## ¿Cómo instalar módulos?
+
+###### Este comando instala los módulos que se han activado.
 
 * `sudo make modules_install`
 
@@ -88,11 +92,15 @@
 
 ## ¿Cómo instalar el kernel?
 
+###### Este comando instala el kernel (de igual manera, tomará un tiempo... es hora de una partidita):
+
 * `sudo make install`
 
 ![alt text](https://github.com/danny-blip/P3/blob/main/i1.png "i1")
 
 ## ¿Cómo indicarle a la computadora con cuál kernel debe iniciar?
+
+###### Estos comandos habilitan el kernel para el arranque:
 
 * `sudo update-initramfs -c -k 5.11.16`
 
@@ -101,6 +109,8 @@
 ![alt text](https://github.com/danny-blip/P3/blob/main/j1.png "j1")
 
 ## ¿Cómo verificar el cambio del kernel a partir de consola?
+
+###### Este comando muestra la versión actual del kernel (es necesario reiniciar la computadora para que se vean los cambios):
 
 * `uname -mrs`
 
