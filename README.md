@@ -94,7 +94,11 @@
 
 ## ¿Cómo indicarle a la computadora con cuál kernel debe iniciar?
 
+* `sudo update-initramfs -c -k 5.11.16`
 
+* `sudo update-grub`
+
+![alt text](https://github.com/danny-blip/P3/blob/main/j1.png "j1")
 
 ## ¿Cómo verificar el cambio del kernel a partir de consola?
 
