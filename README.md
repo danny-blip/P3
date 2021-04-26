@@ -4,6 +4,7 @@
 ###### Para crear un respaldo de una máquina virtual, esta puede clonarse de la siguiente manera:
 * Primero, la máquina virtual debe estar apagada.
 * Dar clic derecho sobre ella y se selecciona la opción «clonar».
+![alt text](https://github.com/danny-blip/P3/blob/main/a1.png "a1")
 * Se recomiendan las opciones por defecto.
 * Seleccionar la opción «clonación completa».
 * Esperar un momento a que la máquina termine de clonarse.
@@ -44,7 +45,7 @@
 * Para llevar a cabo este paso, es necesario que la USB esté desmontada.
 * Descargar un archivo iso de la distribución Linux deseada. Para este caso, se utilizará Kali Linux. Una vez que el archivo esté descargado, se abre la terminal, se cambia al directorio en donde se guardó el archivo `.iso` y se ejecuta el siguiente comando:
 
-![alt text](https://github.com/danny-blip/NobleTeam/blob/main/10a.png "10a")
+
 
 * Se tardará unos minutos dependiendo de la capacidad de la USB. Finalmente, se debe montar la USB y, en ella, se tendrá lo siguiente:
 
