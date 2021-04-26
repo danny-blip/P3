@@ -32,6 +32,8 @@
 * Número de subversión del kernel.
 * Número de parche.
 
+![alt text](https://github.com/danny-blip/P3/blob/main/k1.png "k1")
+
 ## ¿Cómo instalar los paquetes requeridos para la compilación del kernel desde terminal?
 
 * `sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison`
