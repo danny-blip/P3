@@ -32,11 +32,13 @@
 * Número de subversión del kernel.
 * Número de parche.
 
-###### En este ejemplo, la versión es 5, la subversión es 11 y el número de parche es 16.
-
 ![alt text](https://github.com/danny-blip/P3/blob/main/k1.png "k1")
 
+###### En este ejemplo, la versión es 5, la subversión es 11 y el número de parche es 16.
+
 ## ¿Cómo instalar los paquetes requeridos para la compilación del kernel desde terminal?
+
+###### Para compilar el kernel, se necesitan algunos componentes. Pueden instalarse de manera simple con el siguiente comando:
 
 * `sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison`
 
@@ -44,11 +46,15 @@
 
 ## ¿Cómo descargar una versión de kernel desde terminal?
 
+###### Para descargar el kernel, solo se necesita el comando `wget` y la URL del kernel que se desea (en este ejemplo se usará la versión 5.11.16 de kernel):
+
 * `wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.16.tar.xz`
 
 ![alt text](https://github.com/danny-blip/P3/blob/main/d1.png "d1")
 
 ## ¿Cómo extraer el código comprimido del kernel desde terminal?
+
+###### El siguiente comando extrae el archivo que se ha descargado anteriormente.
 
 * `tar xvf linux-5.11.16.tar.xz`
 
@@ -70,7 +76,7 @@
 
 ![alt text](https://github.com/danny-blip/P3/blob/main/f2.png "f2")
 
-###### En algunas ocasiones, la compilación del kernel fallará debido a una configuración en el archivo .config de la carpeta del kernel. Para solucionar esto, hay que ingresar al archivo y eliminar la línea `CONFIG_SYSTEM_TRUSTED_KEYS`.
+###### En algunas ocasiones, la compilación del kernel fallará debido a una configuración en el archivo `.config` de la carpeta del kernel. Para solucionar esto, hay que ingresar al archivo y eliminar la línea `CONFIG_SYSTEM_TRUSTED_KEYS`.
 
 ![alt text](https://github.com/danny-blip/P3/blob/main/f3.png "f3")
 
