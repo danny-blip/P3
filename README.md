@@ -1,21 +1,33 @@
 # Compilación del kernel de Linux
 
 ## ¿Cómo hacer un respaldo de una máquina virtual y cómo levantar ese respaldo?
+
 ###### Para crear un respaldo de una máquina virtual, esta puede clonarse de la siguiente manera:
+
 * Primero, la máquina virtual debe estar apagada.
+
 ![alt text](https://github.com/danny-blip/P3/blob/main/a1.png "a1")
+
 * Dar clic derecho sobre ella y se selecciona la opción «clonar».
+
 ![alt text](https://github.com/danny-blip/P3/blob/main/a2.png "a2")
+
 * Se recomiendan las opciones por defecto.
+
 ![alt text](https://github.com/danny-blip/P3/blob/main/a3.png "a3")
+
 * Seleccionar la opción «clonación completa».
+
 ![alt text](https://github.com/danny-blip/P3/blob/main/a4.png "a4")
-* Esperar un momento a que la máquina termine de clonarse.
-* Una vez terminado el proceso, se tendrá una copia de la máquina virtual.
+
+* Esperar un momento a que la máquina termine de clonarse. Una vez terminado el proceso, se tendrá una copia de la máquina virtual.
+
 ![alt text](https://github.com/danny-blip/P3/blob/main/a5.png "a5")
 
 ## ¿Cómo funciona la nomenclatura del kernel?
+
 ###### La nomenclatura del kernel se divide en tres partes:
+
 * Número de versión del kernel.
 * Número de subversión del kernel.
 * Número de parche.
