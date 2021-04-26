@@ -36,38 +36,68 @@
 
 * `sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison`
 
+![alt text](https://github.com/danny-blip/P3/blob/main/c1.png "c1")
+
 ## ¿Cómo descargar una versión de kernel desde terminal?
 
 * `wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.16.tar.xz`
 
+![alt text](https://github.com/danny-blip/P3/blob/main/d1.png "d1")
+
 ## ¿Cómo extraer el código comprimido del kernel desde terminal?
+
 * `tar xvf linux-5.11.16.tar.xz`
 
+![alt text](https://github.com/danny-blip/P3/blob/main/e1.png "e1")
+
+![alt text](https://github.com/danny-blip/P3/blob/main/e2.png "e2")
+
 ## ¿Cómo configurar el kernel?
+
 ###### La configuración del kernel puede ajustarse de la siguiente manera:
+
 * `cd linux-5.11.16`
-* `cp -v /boot/config-$(uname -r) .config`
+
+![alt text](https://github.com/danny-blip/P3/blob/main/f1.png "f1")
+
 * `make menuconfig`
+
 ###### Esto abrirá la ventana de configuración del kernel. En este menú hay opciones de firmware, virtualización, red, sistema de archivos, configuración de memoria, etc.
 
+![alt text](https://github.com/danny-blip/P3/blob/main/f2.png "f2")
+
+###### En algunas ocasiones, la compilación del kernel fallará debido a una configuración en el archivo .config de la carpeta del kernel. Para solucionar esto, hay que ingresar al archivo y eliminar la línea `CONFIG_SYSTEM_TRUSTED_KEYS`.
+
+![alt text](https://github.com/danny-blip/P3/blob/main/f3.png "f3")
+
+![alt text](https://github.com/danny-blip/P3/blob/main/f4.png "f4")
+
+![alt text](https://github.com/danny-blip/P3/blob/main/f5.png "f5")
+
 ## ¿Cómo compilar el código del kernel?
-* `make`
+
+* `sudo make`
+
+![alt text](https://github.com/danny-blip/P3/blob/main/g1.png "g1")
 
 ## ¿Cómo instalar módulos?
+
 * `sudo make modules_install`
 
+![alt text](https://github.com/danny-blip/P3/blob/main/h1.png "h1")
+
 ## ¿Cómo instalar el kernel?
+
 * `sudo make install`
 
+![alt text](https://github.com/danny-blip/P3/blob/main/i1.png "i1")
+
 ## ¿Cómo indicarle a la computadora con cuál kernel debe iniciar?
-* Para llevar a cabo este paso, es necesario que la USB esté desmontada.
-* Descargar un archivo iso de la distribución Linux deseada. Para este caso, se utilizará Kali Linux. Una vez que el archivo esté descargado, se abre la terminal, se cambia al directorio en donde se guardó el archivo `.iso` y se ejecuta el siguiente comando:
 
 
-
-* Se tardará unos minutos dependiendo de la capacidad de la USB. Finalmente, se debe montar la USB y, en ella, se tendrá lo siguiente:
-
-![alt text](https://github.com/danny-blip/NobleTeam/blob/main/10B.png "10b")
 
 ## ¿Cómo verificar el cambio del kernel a partir de consola?
+
 * `uname -mrs`
+
+![alt text](https://github.com/danny-blip/P3/blob/main/k1.png "k1")
